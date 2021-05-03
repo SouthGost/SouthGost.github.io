@@ -1,0 +1,66 @@
+#poligon {
+    width: 1000px;
+    height: 1000px;
+    background-color: rgb(207, 207, 207);
+    z-index: 0;
+}
+
+.point {
+    display: grid;
+    position: absolute;
+    place-items: center;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    color: honeydew;
+    border-radius: 50%;
+    z-index: 2;
+
+}
+
+.line {
+    position: absolute;
+    height: 3px;
+    width: 100px;
+    margin: 17px 0px 0px 17px;
+    background-color: red;
+    transform-origin: top left;
+    transform: rotate(1.5707963267948961rad);
+    z-index: 1;
+}
+
+.line::before {
+    content: '';
+    /* margin: 17px; */
+    position: absolute;
+    top: -6px;
+    right: 0px;
+    height: 16px;
+    width: 30px;
+    background-color: green;
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    z-index: 5;
+
+}
+
+.koef_matric_smez {
+    width: 50px;
+}
+
+#tree{
+    display: flex;
+    margin-top: 15px;   
+}
+
+.parent{
+    text-align: center;
+    padding: 10px;
+    background-color: blue;
+    color: honeydew;
+    border-radius: 50%;
+}
+
+.child{
+    display: flex;
+}
