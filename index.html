@@ -25,21 +25,20 @@
 
         <button onclick="task1()">Задание1</button>
         <button onclick="task2(spisokReber)">Задание2</button>
-        <button onclick="pvg(spiskiSmez)">Задание4:)</button>
+        <input id="start_pvg" type="number" placeholder="start pvg" value="0">
+        <button onclick=" pvg(spiskiSmez, startPvg.value) ">Задание4:)</button>
 
-        <div id="tree">
-	
-        </div>
+        <div id="tree"></div>
 
         <p>Вершины:</p>
-        <input type="number" name="" id="input_point_number" value="6" min="2">
-        <button onclick="create_Points(inputPointNumber.value)">Cоздать</button>
+        <input type="number" id="input_point_number" value="6" min="2">
+        <button onclick="create_Points(inputPointNumber.value) ">Cоздать</button>
         <div id="matric_smez"></div>
-        <button onclick="convertToMateicSmez()">Добавить матрицу смежности</button>
+        <button onclick="convertToMateicSmez() ">Добавить матрицу смежности</button>
     </div>
 
 
-    <script src="script.js" defer></script>
+    <script src="script.js " defer></script>
 </body>
 
 </html>
